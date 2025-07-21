@@ -72,7 +72,7 @@ app.get('/', (req, res) => {
   res.send('✅ Google Sheet API is running. Use /api/sheet-data');
 });
 
-app.get('/api/sheet-data', async (req, res) => {
+app.get('/', async (req, res) => {
   try {
     const jsonData = await fetchSheetData();
     res.json(jsonData);
